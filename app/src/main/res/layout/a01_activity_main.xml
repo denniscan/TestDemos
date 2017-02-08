@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolBar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:background="?attr/colorPrimary" />
+
+	<android.support.v4.widget.DrawerLayout
+		android:id="@+id/drawerLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<android.support.design.widget.CoordinatorLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			tools:showIn="@layout/a01_activity_main">
+
+			<android.support.design.widget.AppBarLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/colorPrimary"
+					android:orientation="vertical"
+					app:layout_scrollFlags="scroll">
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:padding="@dimen/x5"
+						android:text="Material Design Demo"
+						android:textColor="#fff" />
+				</LinearLayout>
+
+				<android.support.design.widget.TabLayout
+					android:id="@+id/tabLayout"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="@color/colorPrimary"
+					android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+			</android.support.design.widget.AppBarLayout>
+
+			<android.support.v4.view.ViewPager
+				android:id="@+id/viewPager"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/floatingButton"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom|end"
+				android:layout_margin="@dimen/x5"
+				android:src="@android:drawable/ic_dialog_email" />
+		</android.support.design.widget.CoordinatorLayout>
+
+		<android.support.design.widget.NavigationView
+			android:id="@+id/navigationView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="start"
+			app:headerLayout="@layout/a01_navigation_head"
+			app:menu="@menu/a01_navigation_menu" />
+	</android.support.v4.widget.DrawerLayout>
+</LinearLayout>

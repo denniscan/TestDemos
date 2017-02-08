@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?><!--layout_margin用来设置网格之间的距离-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_margin="@dimen/x5"
+	android:foreground="@drawable/selector_list_item">
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:padding="@dimen/x5">
+
+		<ImageView
+			android:id="@+id/imageIV"
+			android:layout_width="@dimen/x100"
+			android:layout_height="@dimen/x100"
+			android:background="#22000000"
+			android:scaleType="centerCrop"
+			android:transitionName="@string/tran_01" />
+
+		<TextView
+			android:id="@+id/titleTV"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="@dimen/x5"
+			android:text="选项"
+			android:textColor="@color/black"
+			android:textSize="@dimen/txMiddle" />
+	</LinearLayout>
+</android.support.v7.widget.CardView>
+

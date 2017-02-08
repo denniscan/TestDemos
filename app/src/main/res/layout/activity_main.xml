@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/activity_main"
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:paddingBottom="@dimen/activity_vertical_margin"
-	android:paddingLeft="@dimen/activity_horizontal_margin"
-	android:paddingRight="@dimen/activity_horizontal_margin"
-	android:paddingTop="@dimen/activity_vertical_margin"
-	tools:context="dennis.testdemos.MainActivity">
+	android:layout_height="match_parent">
 
-	<TextView
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:text="Hello World!" />
-</RelativeLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<!--<Button
+			android:id="@+id/weatherReportBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="天气" />
+
+		<Button
+			android:id="@+id/chartBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="图表" />
+
+		<Button
+			android:id="@+id/zXingBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="ZXing" />
+
+		<Button
+			android:id="@+id/groupRecyclerViewBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="分组RecyclerView" />
+
+		<Button
+			android:id="@+id/textSizeBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Text Size" />
+
+		<Button
+			android:id="@+id/snakeBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Snack Bar" />
+
+		<Button
+			android:id="@+id/downloadBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="下载" />
+
+		<Button
+			android:id="@+id/jsonBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Json" />
+
+		<Button
+			android:id="@+id/autoCompleteBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="自动填写" />
+
+		<Button
+			android:id="@+id/permissionBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="权限" />-->
+
+		<Button
+			android:id="@+id/materialDesignBtn"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="材料设计" />
+	</LinearLayout>
+</ScrollView>
