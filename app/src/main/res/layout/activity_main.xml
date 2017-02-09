@@ -60,13 +60,13 @@
 			android:id="@+id/autoCompleteBtn"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="自动填写" />
+			android:text="自动填写" />-->
 
 		<Button
 			android:id="@+id/permissionBtn"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="权限" />-->
+			android:text="权限" />
 
 		<Button
 			android:id="@+id/materialDesignBtn"
